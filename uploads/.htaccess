@@ -1,6 +1,3 @@
-# Segurança extra: mesmo que alguém consiga colocar um arquivo malicioso
-# aqui dentro, o servidor nunca executa ele como PHP — só serve como arquivo
-# estático (imagem, texto, etc).
 
 <IfModule mod_php7.c>
     php_flag engine off
