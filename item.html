@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avaliar música ou álbum — BARTOTEC</title>
+    <meta name="description" content="Veja resenhas, dê sua nota de 0.5 a 5 estrelas, registre no diário e salve na lista de quero ouvir." />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=8" />
+  </head>
+  <body>
+    <header id="topo"></header>
+
+    <main class="container secao">
+      <div class="duas-colunas">
+        <section>
+          <div class="painel" id="ficha"></div>
+        </section>
+
+        <section class="painel">
+          <h2>Sua avaliação</h2>
+          <p class="desc">Nota de 0.5 a 5 estrelas (dá pra marcar meia estrela) e, se quiser, uma resenha.</p>
+          <div class="aviso erro esconde" id="aviso-avaliar"></div>
+          <div id="area-avaliar">
+            <div class="campo">
+              <span>Nota</span>
+              <div class="estrelas-input" id="estrelas-input"></div>
+              <span class="estrelas-input-valor" id="estrelas-input-valor">Sem nota ainda</span>
+            </div>
+            <label class="campo"><span>Resenha</span><textarea id="resenha" placeholder="O que você achou?"></textarea></label>
+            <button class="btn btn-rosa" id="btn-salvar">Salvar avaliação</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="secao">
+        <div class="secao-topo"><h2>Resenhas da galera</h2></div>
+        <div class="lista" id="resenhas"><p class="carregando">Carregando resenhas...</p></div>
+      </div>
+    </main>
+
+    <footer id="rodape"></footer>
+
+    <script src="js/api.js?v=8"></script>
+    <script src="js/comum.js?v=8"></script>
+    <script src="js/item.js?v=8"></script>
+  </body>
+</html>

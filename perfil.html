@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perfil e diário musical — BARTOTEC</title>
+    <meta name="description" content="Suas avaliações, seu diário de escutas e sua lista de quero ouvir em um só lugar." />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=8" />
+  </head>
+  <body>
+    <header id="topo"></header>
+
+    <main class="container secao">
+      <div class="painel" id="cabecalho-perfil"><p class="carregando">Carregando perfil...</p></div>
+
+      <div class="abas">
+        <button class="ativa" data-aba="avaliacoes">Avaliações</button>
+        <button data-aba="diario">Diário</button>
+        <button data-aba="quero">Quero ouvir</button>
+      </div>
+
+      <div class="lista" id="conteudo-aba"></div>
+    </main>
+
+    <footer id="rodape"></footer>
+
+    <script src="js/api.js?v=8"></script>
+    <script src="js/comum.js?v=8"></script>
+    <script src="js/perfil.js?v=8"></script>
+  </body>
+</html>

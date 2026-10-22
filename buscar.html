@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buscar músicas e álbuns — BARTOTEC</title>
+    <meta name="description" content="Busque músicas, álbuns e artistas no acervo do Deezer e avalie no BARTOTEC." />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=8" />
+  </head>
+  <body>
+    <header id="topo"></header>
+
+    <main class="container secao">
+      <h1 style="font-size: 30px; margin-bottom: 18px">Buscar</h1>
+      <form class="busca" id="form-busca">
+        <input id="campo-busca" type="search" placeholder="Digite artista, música ou álbum..." />
+        <select id="tipo-busca">
+          <option value="track">Músicas</option>
+          <option value="album">Álbuns</option>
+          <option value="artist">Artistas</option>
+        </select>
+        <button class="btn btn-rosa" type="submit">Buscar</button>
+      </form>
+
+      <div class="secao">
+        <div class="grade" id="resultados"></div>
+      </div>
+    </main>
+
+    <footer id="rodape"></footer>
+
+    <script src="js/api.js?v=8"></script>
+    <script src="js/comum.js?v=8"></script>
+    <script src="js/buscar.js?v=8"></script>
+  </body>
+</html>

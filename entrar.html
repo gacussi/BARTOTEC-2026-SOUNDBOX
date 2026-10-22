@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entrar ou criar conta — BARTOTEC</title>
+    <meta name="description" content="Acesse sua conta BARTOTEC para avaliar músicas, manter seu diário de escutas e sua lista de quero ouvir." />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=8" />
+  </head>
+  <body>
+    <header id="topo"></header>
+
+    <main class="container secao">
+      <div class="duas-colunas">
+        <section class="painel">
+          <h2>Entrar</h2>
+          <p class="desc">Já tem conta? Bora continuar o diário.</p>
+          <div class="aviso erro esconde" id="aviso-login"></div>
+          <form id="form-login">
+            <label class="campo"><span>Email</span><input type="email" id="login-email" required /></label>
+            <label class="campo"><span>Senha</span><input type="password" id="login-senha" required /></label>
+            <button class="btn btn-verde" type="submit">Entrar</button>
+          </form>
+        </section>
+
+        <section class="painel">
+          <h2>Criar conta</h2>
+          <p class="desc">Leva 20 segundos e é de graça.</p>
+          <div class="aviso erro esconde" id="aviso-registro"></div>
+          <form id="form-registro">
+            <label class="campo"><span>Nome</span><input type="text" id="reg-nome" required /></label>
+            <label class="campo"><span>Email</span><input type="email" id="reg-email" required /></label>
+            <label class="campo"><span>Senha</span><input type="password" id="reg-senha" minlength="6" required /></label>
+            <button class="btn btn-rosa" type="submit">Criar conta</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer id="rodape"></footer>
+
+    <script src="js/api.js?v=8"></script>
+    <script src="js/comum.js?v=8"></script>
+    <script src="js/entrar.js?v=8"></script>
+  </body>
+</html>
