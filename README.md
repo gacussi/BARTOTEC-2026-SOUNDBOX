@@ -100,3 +100,5 @@ GET /api/top.php?limite=10           -> quantidade de resultados (padrão 25)
 ```
 Usa o chart "geral" do Deezer (`/chart/0/...`), que é **mundial** — não é filtrado
 por país nem depende de onde o servidor está hospedado.
+
+## INTEGRANTES DO GRUPO: Guilherme Acussi, Evelyn Amorim e Enzo Zan 2 AMS 
